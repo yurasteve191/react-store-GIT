@@ -1,0 +1,62 @@
+.shopTopBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    height: 4vw;
+
+    background-color: rgba(0, 0, 0, 0.5)
+}
+.shopTopBar>form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vw;
+
+    height: 100%;
+}
+.shopTopBar input,
+.shopTopBar select{
+    box-sizing: border-box;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: white;
+
+    padding-left: 1vw;
+
+    height: 3vw;
+
+    border: none;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.shopTopBar button{
+    box-sizing: border-box;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: white;
+
+    padding: 1vw;
+
+    height: 3vw;
+
+    border: none;
+    border-radius: 2vw;
+
+    transition: .3s;
+
+    background-color: rgba(0, 44, 139, 0.5);
+}
+.shopTopBar button:hover{
+    transform: scale(1.1);
+}
+

@@ -1,0 +1,22 @@
+.categoryList{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 3vw;
+
+    gap: 2vw;
+
+    width: 100%;
+    height: 100%;
+
+    overflow-y: auto;
+}
+
+.categoryList.center{
+    justify-content: center !important;
+    align-items: center !important;
+}

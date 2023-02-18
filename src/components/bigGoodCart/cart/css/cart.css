@@ -1,0 +1,224 @@
+.bgc-cart{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    left: 0px;
+    top: 0px;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+.bgc-cart>article{
+    position: relative;
+
+    width: 100vw;
+    height: 35vw;
+}
+
+.bgc-cart.showing>article>.close-btn,
+.bgc-cart.hiddening>article>.close-btn,
+.bgc-cart.disactive>article>.close-btn{
+    display: none;
+}
+.bgc-cart>article>.close-btn{
+    position: absolute;
+
+    left: 90%;
+    top: 0px;
+
+    width: 2vw;
+    height: 2vw;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+
+    background-color: transparent;
+
+    transition: .3s;
+}
+
+.bgc-cart>article>.close-btn:hover{
+    transform: scale(1.2);
+}
+
+.bgc-cart>article>.b-sect{
+    position: absolute;
+
+    top: 0%;
+    left: 10%;
+
+    width: 35vw;
+    height: 100%;
+
+    border-radius: 3vw;
+
+    background: linear-gradient(0deg, rgba(34,103,195,1) 0%, rgba(45,243,253,1) 100%);
+    /* background: radial-gradient(rgb(141, 20, 13), rgb(39, 15, 15)); */
+    box-shadow: 0vw .4vw .4vw rgba(0, 0, 0, 0.425);
+
+    z-index: 1;
+}
+
+.bgc-cart>article>.f-sect{
+    box-sizing: border-box;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-gap: 1vw;
+
+    padding-top: 5vw;
+    padding-left: 15vw;
+
+    top: 7%;
+    left: 30%;
+
+    width: 50vw;
+    height: 85%;
+
+    border-radius: 3vw;
+
+    background-color: rgba(0, 0, 0, 0.712);
+    backdrop-filter: blur(2vw);
+    box-shadow: -0.4vw .5vw .4vw rgba(0, 0, 0, 0.425);
+
+    z-index: 2;
+
+    color: white
+}
+
+
+.bgc-cart>article>.f-sect>h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 4vw;
+    text-transform: uppercase;
+}
+
+.bgc-cart>article>.f-sect>h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5vw;
+    
+}
+.bgc-cart>article>.f-sect>h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    font-size: 4vw;
+    
+}
+.bgc-cart>article>.f-sect>.btn-sec{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+
+    top: 2vw;
+    left: 8vw;
+
+    width: 25vw;
+    height: 4vw;
+
+}
+
+.bgc-cart.hidden{
+    animation-duration: 5s;
+    animation-name: showBigGoodCart;
+    animation-duration: 2s;
+}
+
+/* action */
+
+/* l-sec */
+.bgc-cart>article>.b-sect{
+    transform: translateX(-4vw);
+    transition: .2s;
+}
+.bgc-cart.showing>article>.b-sect{
+    opacity: 0;
+}
+.bgc-cart.active>article>.b-sect{
+    transform: translateX(5vw) ;
+    opacity: 1;
+}
+.bgc-cart.hiddening>article>.b-sect{
+    transform: translateX(-2vw);
+    opacity: 0;
+}
+/* r-sec */
+.bgc-cart>article>.f-sect{
+    transform: translateX(16vw);
+    transition: .2s;
+}
+.bgc-cart.showing>article>.f-sect{
+    opacity: 0;
+}
+.bgc-cart.active>article>.f-sect{
+    transform: translateX(0vw) ;
+    opacity: 1;
+}
+.bgc-cart.hiddening>article>.f-sect{
+    transform: translateX(16vw);
+    opacity: 0;
+}
+/* img-sec */
+.bgc-cart>article>img{
+    transform: translateY(-10vw);
+    transition: .2s;
+}
+.bgc-cart.showing>article>img{
+    opacity: 0;
+}
+.bgc-cart.active>article>img{
+    transform: translateY(0vw) ;
+    opacity: 1;
+}
+.bgc-cart.hiddening>article>img{
+    transform: translateY(-10vw);
+    opacity: 0;
+}
+/* end */
+.bgc-cart.disactive{
+    display: none;
+}
+
+
+/* IMG */
+.bgc-img{
+    position: absolute;
+
+    top: 15%;
+    left: 18%;
+
+    width: 25vw;
+
+    z-index: 3;
+
+    /* animation-duration: 5s; */
+    /* animation: 3s ease-in-out 1s infinite  staying; */
+}
+
+@keyframes staying {
+    from {
+      transform: translateY(-0.5vw);
+    }
+    50%{
+        transform: translateY(.5vw);
+    }
+    to {
+        transform: translateY(-0.5vw);
+    }
+  }

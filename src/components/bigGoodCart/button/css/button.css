@@ -1,0 +1,46 @@
+
+.bgc-button-buy{
+
+    width: 12vw;
+
+    border-radius: 2vw;
+    border: none;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: white;
+
+    transition: .3s;
+
+    background-color: red;
+    box-shadow: 0vw .2vw 1vw rgba(255, 0, 0, 0.452);
+
+}
+.bgc-button-buy:hover{
+    transform: scale(1.1) ;
+}
+
+.bgc-button-shop{
+
+    width: 12vw;
+
+    border-radius: 2vw;
+    border: none;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: white;
+
+    transition: .3s;
+
+    background-color: transparent;
+    /* box-shadow: 0vw .2vw 1vw rgba(255, 0, 0, 0.452); */
+
+}
+.bgc-button-shop:hover{
+    transform: scale(1.1) ;
+}

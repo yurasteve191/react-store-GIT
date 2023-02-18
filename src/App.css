@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden; 
+
+}
+.AppBackground{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  
+  width: 100%;
+  height: 100%;
+
+  /* background-image: url('./media/bg.jpg'); */
+  /* background-repeat: repeat; */
+  /* background-size: 20vw; */
+  background: linear-gradient(0deg, rgba(34,103,195,1) 0%, rgba(45,243,253,1) 100%);
+}
+.App {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  grid-gap: 1vw;
+
+  overflow-y: auto;
+
+  width: 100vw;
+  height: 100%;
+
+  /* backdrop-filter: blur(.05vw); */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  
+
+  /* background: radial-gradient(rgb(141, 20, 13), rgb(0, 0, 0)); */
+}
+
+.userMastLoginContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+.userMastLoginContainer>h1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size: 7vw;
+  color: white;
+
+}
+.userMastLoginContainer>h3{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size: 2vw;
+  color: white;
+}
+
+.userMastLoginContainer h1:nth-child(3){
+  animation: waiting 1s ease-in-out 0s infinite alternate;
+  transition: .1s;
+}
+@keyframes waiting {
+  0%   {transform: translateY(0vw);}
+  100% {transform: translateY(-1vw);}
+}

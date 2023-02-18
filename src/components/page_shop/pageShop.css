@@ -1,0 +1,51 @@
+.pageShop{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    gap: 2vw;
+
+    padding: 2vw;
+    padding-left: 17vw;
+
+    transition: .5s;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.pageShop.showing{
+    transform: translateX(-3vw);
+    opacity: 0;
+}
+.pageShop.active{
+    opacity: 1;
+}
+.pageShop>h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.pageShop>.goodsList{
+    flex-grow: 1;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1vw;
+
+    padding: 0vw 1vw 0vw 1vw;
+
+    overflow-y: auto;
+}

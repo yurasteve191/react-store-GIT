@@ -1,0 +1,48 @@
+.goodList{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 3vw;
+
+    gap: 2vw;
+
+    width: 100%;
+    height: 100%;
+
+    overflow-y: auto;
+}
+
+.goodList.center{
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.orderButton{
+    align-self: flex-end;
+
+    border-radius: 1vw;
+    border: none;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: white;
+
+    margin: 1vw;
+
+    height: 5vw;
+    width: 13vw;
+
+    background-color: rgba(0, 45, 129, 0.7);
+
+    transition: .3s;
+}
+
+.orderButton:hover{
+    transform: scale(1.1);
+}

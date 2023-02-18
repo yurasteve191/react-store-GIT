@@ -1,0 +1,282 @@
+#logRegElId{
+    position: fixed;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    left: 0vw;
+    height: 0vh;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.712);
+    backdrop-filter: blur(2vw);
+
+    z-index: 2;
+}
+
+#logRegElId>section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50vw;
+    height: 35vw;
+
+    border-radius: 1vw;
+
+    overflow: hidden;
+
+    transition: .3s;
+
+    background-color: rgb(255, 255, 255);
+}
+
+#logRegElId>section>.logRegSec,
+#logRegElId>section>.logRegTitleSec{
+    position: absolute;
+    top: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    transition: .3s ;
+
+    width: 50%;
+    height: 100%;
+}
+
+#logRegElId>section>.logRegTitleSec{
+    box-sizing: border-box;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.close-btn{
+    position: absolute;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    left: 80%;
+    top: 4vw;
+
+    width: 2.1vw;
+    height: 2.1vw;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+
+    background-color: transparent;
+
+    transition: .3s;
+}
+
+/* FORM */
+
+#logRegElId>section>.logRegSec>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1vw;
+
+    width: 100%;
+    height: 100%;
+
+    margin-top: 1vw;
+}
+#logRegElId>section>.logRegSec>form>h3{
+    text-align: center;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    color: black;
+}
+/* FORM STATUS TEXT || LOADIN TEXT */
+.formStatusText{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 5vw;
+    color: white;
+}
+.formStatusText.a-spin{
+    animation: spin .8s linear infinite;
+}
+.formStatusText.a-show{
+    animation: show 2s ease-in-out;
+}
+@keyframes spin {
+    100%{transform:rotate(360deg);}
+}
+@keyframes show {
+    0%{
+        transform: translateY(-10vw);
+        opacity: 0;
+    }
+    10%{
+        transform: translateY(1vw);
+        opacity: 1;
+    }
+    20%{
+        transform: translateY(-4vw);
+        opacity: 1;
+    }
+    35%{
+        transform: translateY(.5vw);
+        opacity: 1;
+    }
+    45%{
+        transform: translateY(-2vw);
+        opacity: 1;
+    }
+    60%{
+        transform: translateY(0vw);
+        opacity: 1;
+    }
+
+}
+
+/* END FORM STATUS TEXT */
+
+#logRegElId>section>.logRegSec>form input{
+    box-sizing: border-box;
+
+    border: none;
+    border-bottom: .1vw solid rgb(0, 0, 0);
+
+    background-color: transparent;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5vw;
+    color: rgb(0, 0, 0);
+
+    text-transform: uppercase;
+
+    padding-left: 1vw;
+
+    min-height: 3vw !important;
+    max-height: 3vw !important;
+}
+
+#logRegElId>section>.logRegSec>form>button{
+    margin-top: 1vw;
+    margin-right: 1vw;
+
+    align-self: center;
+
+    border: none;
+    border-radius: 1vw;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    color: white;
+
+    width: 15vw;
+    height: 4vw;
+
+    transition: .3s;
+
+    background-color: rgba(0, 45, 129, 0.5);
+}
+
+#logRegElId>section>.logRegSec>form>button:hover{
+    transform: scale(1.1);
+}
+/* END FORM */
+
+/* TITLE */
+#logRegElId>section>.logRegTitleSec>h3{
+    text-align: center;
+    
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    color: white;
+}
+#logRegElId>section>.logRegTitleSec>button{
+    margin-top: 1vw;
+    margin-right: 1vw;
+
+    align-self: center;
+
+    border: none;
+    border-radius: 1vw;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    color: white;
+
+    width: 15vw;
+    height: 4vw;
+
+    transition: .3s;
+
+    background-color: rgba(0, 45, 129, 0.7);
+}
+#logRegElId>section>.logRegTitleSec>button:hover{
+    transform: scale(1.1);
+}
+
+/* END TITLE */
+
+/* PLACEHOLDER */
+
+
+#logRegElId>section>.logRegSec>form input::placeholder{
+    color: rgb(0, 0, 0);
+    opacity: 1;
+}
+/*END PLACEHOLDER */
+
+/* login */
+#logRegElId.login>section>.logRegSec{
+    left: 0%;
+}
+
+#logRegElId.login>section>.logRegTitleSec{
+    left: 50%;
+    background: linear-gradient(0deg, rgba(34,103,195,1) 0%, rgba(45,243,253,1) 100%);
+}
+
+/* register */
+#logRegElId.register>section>.logRegSec{
+    left: 50%;
+}
+
+#logRegElId.register>section>.logRegTitleSec{
+    left: 0%;
+    background: linear-gradient(0deg, rgba(34,103,195,1) 0%, rgba(45,243,253,1) 100%);
+}
+
+
+/* SHOWING */
+
+#logRegElId>section.showing{
+    transform: translateY(-5vw);
+    opacity: 0;
+}
+#logRegElId>section.active{
+    opacity: 1;
+}
+
+

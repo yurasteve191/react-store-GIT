@@ -1,0 +1,54 @@
+/* MENU BTNS */
+.sideBarButton{
+
+    height: 4vw;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    
+    border: none;
+
+    width: 100%;
+
+    transition: .3s;
+}
+.sideBarButton:hover{
+    transform: scale(1.05) translateX(1.1vw);
+}
+.sideBarButton.active{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+.sideBarButton.disactive{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* END MENU BTNS */
+
+/* LOGIN REGISTER BTNS */
+.lgButton{
+    position: absolute;
+    
+    color: white;
+
+    top: 90vh;
+    left: 0vw;
+
+    background-color: rgba(0, 45, 129, 0.5);
+}
+/* END LOGIN REGISTER BTNS */
+
+/* LOGOUT BTN */
+.lgoutButton{
+    position: absolute;
+    
+    color: white;
+
+    top: 90vh;
+    left: 0vw;
+
+    background-color: brown;
+}
+/* END LOGOUT BTN */

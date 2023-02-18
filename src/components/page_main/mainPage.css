@@ -1,0 +1,26 @@
+.mainPage{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    gap: 2vw;
+
+    padding: 5vh;
+    padding-left: 17vw;
+
+    transition: .5s;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.mainPage.showing{
+    transform: translateX(-3vw);
+    opacity: 0;
+}
+.mainPage.active{
+    opacity: 1;
+}

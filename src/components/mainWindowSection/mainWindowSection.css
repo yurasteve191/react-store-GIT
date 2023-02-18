@@ -1,0 +1,40 @@
+.mainWindowSection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    height: fit-content;
+    max-height: 30vw;
+
+    /* backdrop-filter: blur(0vw) */
+
+}
+.mainWindowSection.bg-true{
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    /* backdrop-filter: blur(2vw); */
+    box-shadow: -0.5vw .5vw 1vw rgba(0, 0, 0, 0.5);
+}
+.mainWindowSectionTitle{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 10vw;
+    min-height: 3vw;
+
+    border-bottom-right-radius: 2vw;
+
+    background-color: red;
+}
+
+.mainWindowSectionTitle>p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: white;
+    text-transform: uppercase;
+}
